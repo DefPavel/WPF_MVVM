@@ -1,0 +1,24 @@
+﻿<Application x:Class="WPF_MVVM.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WPF_MVVM">
+    
+        <Application.Resources>
+       
+        <ResourceDictionary>
+
+            <!-- Данный класс запускает наше приложение Bootstrapper -->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <local:Bootstrapper x:Key="Bootstrapper"/>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- Сообщение об ошибки при авториазции -->
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+
+        </ResourceDictionary>
+
+
+    </Application.Resources>
+</Application>
